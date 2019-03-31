@@ -9,6 +9,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/EurekaRegisterSystem/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-common-module/pom.xml" />
+        <option value="$PROJECT_DIR$/mongodb-common-module/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-common-module/pom.xml" />
+        <option value="$PROJECT_DIR$/utils-common-module/pom.xml" />
+        <option value="$PROJECT_DIR$/TestApplication/pom.xml" />
       </list>
     </option>
   </component>
