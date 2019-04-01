@@ -2,7 +2,7 @@ package com.paladin.mongo.entity;
 
 import lombok.Data;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 @Data
 public class InfoLogEntity {
@@ -11,6 +11,6 @@ public class InfoLogEntity {
 
     private String msg;
 
-    private Timestamp timestamp;
+    private Date timestamp;
 
 }
