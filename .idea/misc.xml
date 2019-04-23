@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/rabbitmq-common-module/pom.xml" />
         <option value="$PROJECT_DIR$/utils-common-module/pom.xml" />
         <option value="$PROJECT_DIR$/TestApplication/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisGeneratorUtil/pom.xml" />
       </list>
     </option>
   </component>
