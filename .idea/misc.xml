@@ -8,13 +8,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/EurekaRegisterSystem/pom.xml" />
-        <option value="$PROJECT_DIR$/redis-common-module/pom.xml" />
-        <option value="$PROJECT_DIR$/mongodb-common-module/pom.xml" />
-        <option value="$PROJECT_DIR$/rabbitmq-common-module/pom.xml" />
-        <option value="$PROJECT_DIR$/utils-common-module/pom.xml" />
-        <option value="$PROJECT_DIR$/TestApplication/pom.xml" />
-        <option value="$PROJECT_DIR$/MybatisGeneratorUtil/pom.xml" />
+        <option value="$PROJECT_DIR$/common-module-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/common-module-mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-system-web/pom.xml" />
       </list>
     </option>
   </component>

@@ -2,10 +2,107 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
+    <!--顶层都是官方-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <!--项目父定义-->
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.paladin</groupId>
     <artifactId>cloud-order</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>CloudOrder</name>
+    <description>云订单销售系统</description>
+
+    <!--版本控制-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <project.build.jdk>${java.version}</project.build.jdk>
+        <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
+        <start-class>com.paladin.Application</start-class>
+    </properties>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>admin-system-web</module>
+        <module>common-module-mongodb</module>
+        <module>common-module-redis</module>
+    </modules>
+
+    <dependencyManagement>
+        <!-- 自定义模板管理 -->
+        <dependencies>
+            <dependency>
+                <groupId>com.paladin</groupId>
+                <artifactId>admin-system-web</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>com.paladin</groupId>
+                <artifactId>common-module-mongodb</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>com.paladin</groupId>
+                <artifactId>common-module-redis</artifactId>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 第三方共用jar依赖 -->
+    <dependencies>
+        <!--swagger-->
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>spring-boot-starter-swagger</artifactId>
+            <version>1.5.1.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring.boot.version}</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+                <configuration>
+                    <skipTests>true</skipTests>    <!--默认关掉单元测试 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

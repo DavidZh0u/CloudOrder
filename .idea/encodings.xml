@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EurekaRegisterSystem" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MybatisGeneratorUtil" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/TestApplication" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-system-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-module-mongodb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-module-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mongodb-common-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq-common-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/redis-common-module" charset="UTF-8" />
