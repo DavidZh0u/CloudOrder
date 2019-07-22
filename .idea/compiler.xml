@@ -10,6 +10,8 @@
         <module name="CloudOrder" />
         <module name="EurekaRegisterSystem" />
         <module name="common-module-mongodb" />
+        <module name="conmon-module-db" />
+        <module name="common-module-util" />
         <module name="admin-system-web" />
         <module name="TestApplication" />
       </profile>
@@ -32,6 +34,8 @@
       <module name="cloud-order" options="" />
       <module name="common-module-mongodb" options="-parameters" />
       <module name="common-module-redis" options="-parameters" />
+      <module name="common-module-util" options="-parameters" />
+      <module name="conmon-module-db" options="-parameters" />
       <module name="eureka-register-system" options="-parameters" />
       <module name="mongodb-common-module" options="-parameters" />
       <module name="mybatis-generator-util" options="-parameters" />

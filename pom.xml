@@ -34,6 +34,8 @@
         <module>admin-system-web</module>
         <module>common-module-mongodb</module>
         <module>common-module-redis</module>
+        <module>common-module-util</module>
+        <module>conmon-module-db</module>
     </modules>
 
     <dependencyManagement>
@@ -52,6 +54,16 @@
             <dependency>
                 <groupId>com.paladin</groupId>
                 <artifactId>common-module-redis</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>com.paladin</groupId>
+                <artifactId>common-module-util</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>com.paladin</groupId>
+                <artifactId>common-module-db</artifactId>
             </dependency>
 
         </dependencies>

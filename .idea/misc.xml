@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/common-module-redis/pom.xml" />
         <option value="$PROJECT_DIR$/common-module-mongodb/pom.xml" />
         <option value="$PROJECT_DIR$/admin-system-web/pom.xml" />
+        <option value="$PROJECT_DIR$/conmon-module-db/pom.xml" />
+        <option value="$PROJECT_DIR$/common-module-util/pom.xml" />
       </list>
     </option>
   </component>
