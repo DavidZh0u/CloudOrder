@@ -6,14 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="common-module-redis" />
-        <module name="CloudOrder" />
-        <module name="EurekaRegisterSystem" />
-        <module name="common-module-mongodb" />
         <module name="conmon-module-db" />
-        <module name="common-module-util" />
-        <module name="admin-system-web" />
         <module name="TestApplication" />
+        <module name="common-module-redis" />
+        <module name="admin-system-web" />
+        <module name="EurekaRegisterSystem" />
+        <module name="common-module-util" />
+        <module name="common-module-mongodb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
